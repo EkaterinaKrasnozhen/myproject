@@ -39,6 +39,7 @@ INTERNAL_IPS = [
 
 
 # Application definition
+CSRF_TRUSTED_ORIGINS = ['http://krasnozhen.pythonanywhere.com/']
 
 INSTALLED_APPS = [
     'django.contrib.admin',
