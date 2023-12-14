@@ -1,6 +1,8 @@
 from django.shortcuts import render
 from django.http import HttpResponse
 import logging
+
+from myproject.settings import CSRF_COOKIE_SECURE
 from .forms import ClientForm, Hotel_Form, City_Form, Country_Form, TourForm
 from .models import Client, Hotel, City, Country
 from django.template import RequestContext
@@ -12,6 +14,7 @@ def index(request):
     return HttpResponse('Hello, world!')
 
 
+@CSRF_COOKIE_SECURE.csrf_protect
 def add_client_form(request):
     if request.method == 'POST':
         form = ClientForm(request.POST)
