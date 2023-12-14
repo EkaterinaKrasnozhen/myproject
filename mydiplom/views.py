@@ -14,18 +14,6 @@ def index(request):
     return HttpResponse('Hello, world!')
 
 
-def about(request):
-    my_list = ['Красножен', 'Екатерина', 'Леонидовна']
-    my_dict = {
-        'группа': 'программист python',
-        'поток': '2023',
-        'программа': 'Университет 2025',
-        'проект': 'web-приложение для турагентства на Django'
-    }
-    context = {'my_list': my_list, 'my_dict': my_dict}
-    return render(request, 'mydiplom/about.html', context)
-
-
 def add_client_form(request):
     if request.method == 'POST':
         form = ClientForm(request.POST)
