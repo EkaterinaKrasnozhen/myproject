@@ -52,6 +52,7 @@ INSTALLED_APPS = [
     'myapp5',
     'myapp6',
     'debug_toolbar',
+    'mydiplom'
 
 ]
 
