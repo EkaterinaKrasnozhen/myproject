@@ -34,15 +34,11 @@ def post_detail(request, year, month, slug):
 
 
 def view_for(request):
-    my_list = ['apple', 'banana', 'orange']
+    my_list = ['Красножен', 'Екатерина', 'Леонидовна']
     my_dict = {
-        'каждый': 'красный',
-        'охотник': 'оранжевый',
-        'желает': 'жёлтый',
-        'знать': 'зелёный',
-        'где': 'голубой',
-        'сидит': 'синий',
-        'фазан': 'фиолетовый',
+        'группа': 'разработчик python',
+        'поток': '2023',
+        'программа': 'Университет 2025',
     }
     context = {'my_list': my_list, 'my_dict': my_dict}
     return render(request, 'myapp3/templ_for.html', context)
