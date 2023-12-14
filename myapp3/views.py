@@ -52,8 +52,8 @@ def index(request):
     return render(request, 'myapp3/index.html')
 
 
-def about(request):
-    return render(request, 'myapp3/about.html')
+# def about(request):
+#     return render(request, 'myapp3/about.html')
 
 
 def author_posts(request, author_id):
