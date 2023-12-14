@@ -32,7 +32,7 @@ def add_client_form(request):
     else:
         form = ClientForm()
         message = 'Заполните форму'
-    return render(request, 'mydiplom/form.html', {'form': form, 'message': message}, context_instance=RequestContext(request))
+    return render(request, 'mydiplom/form.html', {'form': form, 'message': message})
 
 
 def add_tour_form(request):
