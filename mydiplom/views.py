@@ -3,6 +3,7 @@ from django.http import HttpResponse
 import logging
 from .forms import ClientForm, Hotel_Form, City_Form, Country_Form, TourForm
 from .models import Client, Hotel, City, Country
+from django.template import RequestContext
 
 logger = logging.getLogger(__name__)
 
@@ -31,7 +32,7 @@ def add_client_form(request):
     else:
         form = ClientForm()
         message = 'Заполните форму'
-    return render(request, 'mydiplom/form.html', {'form': form, 'message': message})
+    return render(request, 'mydiplom/form.html', {'form': form, 'message': message}, context_instance=RequestContext(request))
 
 
 def add_tour_form(request):
