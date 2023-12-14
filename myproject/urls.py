@@ -26,4 +26,5 @@ urlpatterns = [
     path('les4/', include('myapp4.urls')),
     #path('__debug__/', include("debug_toolbar.urls")),
     path('les6/', include('myapp6.urls')),
+    path('mydiplom', include('mydiplom.urls')),
 ]
