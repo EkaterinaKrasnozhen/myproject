@@ -14,7 +14,6 @@ def index(request):
     return HttpResponse('Hello, world!')
 
 
-@CSRF_COOKIE_SECURE.csrf_protect
 def add_client_form(request):
     if request.method == 'POST':
         form = ClientForm(request.POST)
