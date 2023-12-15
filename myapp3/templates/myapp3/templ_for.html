@@ -5,11 +5,12 @@
     <title>Первый шаблон Django</title>
 </head>
 <body>    
-    <h2>Приветствую Вас на своем проекте Django</h2>
+    <h2>Приветствую Вас на своем проекте Django:</h2>
+    <h2>web-приложение турагентства</h2>
     <h2>Студент:</h2>
     <ul>
     {% for item in my_list %}
-    <tr><td>{{ item }}</td></tr>
+    <tr>{{ item }}</tr>
     {% endfor %}
     </ul>
     <table>
