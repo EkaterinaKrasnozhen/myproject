@@ -1,5 +1,5 @@
 from django.urls import path
-from mydiplom.views import add_client_form, index, add_hotel_form, add_city_form, add_country_form, add_tour_form, about
+from .views import add_client_form, index, add_hotel_form, add_city_form, add_country_form, add_tour_form
 
 urlpatterns = [
     path('', index, name='index'), # по пустому пути ''
